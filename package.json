@@ -25,6 +25,9 @@
     "url": "https://github.com/azure-samples/js-e2e-express-server/issues"
   },
   "homepage": "https://github.com/azure-samples/js-e2e-express-server#readme",
+  "jest": {
+    "setupFiles": ["<rootDir>/jest.setup.js"]
+  },
   "devDependencies": {
     "eslint": "^7.9.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -35,7 +38,8 @@
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
-    "supertest": "^6.1.1"
+    "supertest": "^6.1.1",
+    "util": "^0.12.5"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
